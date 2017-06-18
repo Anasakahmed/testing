@@ -431,13 +431,13 @@ color: rgba(132, 206, 66, 1);
 }
 
 /* Remove margins and padding from the list */
-ul {
+.im {
   margin: 0;
   padding: 0;
 }
 
 /* Style the list items */
-ul li {
+.im li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
@@ -453,24 +453,24 @@ ul li {
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
+.im li:nth-child(odd) {
   background: #f9f9f9;
 }
 
 /* Darker background-color on hover */
-ul li:hover {
+.im li:hover {
   background: #ddd;
 }
 
 /* When clicked on, add a background color and strike out text */
-ul li.checked {
+.im li.checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
 }
 
 /* Add a "checked" mark when clicked on */
-ul li.checked::before {
+.im li.checked::before {
   content: '';
   position: absolute;
   border-color: #fff;
@@ -584,7 +584,7 @@ $(document).ready(function(){
 
 <br><br>
   <div class="cont_centrar" ><br>
-  <p style="font-family: SEGOEUIL; font-size:24px; color:purple" class="text-center">Skills</p>
+  <p style="font-family: SEGOEUIL; font-size:24px; color:purple" class="text-center">Add your Skills</p>
   <div class="cont_login">
     <form action="">
 
@@ -594,8 +594,8 @@ $(document).ready(function(){
   <span onclick="newElement()" class="addBtn">Add</span>
 </div>
 
-<ul id="myUL" style="list-style-type:none">
-  
+<ul id="myUL" class="im" style="list-style-type:none">
+  <li class="im"></li>
 </ul>
 <div class="terms_and_cons d_none">
   
@@ -632,7 +632,7 @@ $(document).ready(function(){
 
 <script>
 // Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
+var myNodelist = document.getElementsByClassName(".im")
 var i;
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
