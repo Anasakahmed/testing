@@ -8,9 +8,12 @@
 <script src="js/bootstrap.min.js">
 </script>
 <meta charset="utf-8">
-<title>For Employer</title>
+<title>For Job</title>
 <style>
-
+body
+{ 
+ background-image:linear-gradient(-87deg, #F2F5F6 0%, #DDE5E8 100%)
+}
 
 #stylelogo
 {
@@ -42,7 +45,7 @@ option {
 .cont_principal {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height:700px;
 /* Rectangle 3: */
 background-image: linear-gradient(-87deg, #F2F5F6 0%, #DDE5E8 100%);
 }
@@ -422,6 +425,117 @@ font-family: 'Advent Pro', sans-serif;
 color: rgba(132, 206, 66, 1);
 }
 
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #CCC;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  border: none;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
 </style>
 
 <script>
@@ -437,7 +551,7 @@ $(document).ready(function(){
 
 <nav class="navbar navbar-default navbar-fixed-top" style="background-color:white">
   <div class="container-fluid" style="background-color:white " >
-  <img class=" img-responsive" src="img/LOGO-TASHA.png" width="160px" style="float:left; padding-top:10px; padding-left:20px" >
+  <img class=" img-responsive" src="img/LOGO-TASHA.png" width="160px" style="float:left; padding-top:10px; padding-left:30px; margin-left:20px" >
  
     <div class="navbar-header" style="background-color:white">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -452,16 +566,15 @@ $(document).ready(function(){
         </li>
       
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <ol class="nav navbar-nav navbar-right">
         <li ><a href="#" ><button class="btn btn" style="border-radius:0px 0px 0px; background-color:#09F; color:white; height:40px; width:150px; font-size:16px"  ><span class="glyphicon glyphicon-user" >
         </span> Sign Up</button></a></li>
         <li ><a href="#" ><button class="btn btn"  style="border-radius:0px 0px 0px; background-color:#F60; color:white; height:40px; width:150px; font-size:16px"  ><span class="glyphicon glyphicon-user" >
         </span> Login</button></a></li>
-      </ul>
+      </ol>
     </div>
   </div>
 </nav>
-
 
 <!-- Forms -->
 
@@ -469,44 +582,27 @@ $(document).ready(function(){
 
 
 
- 
+<br><br>
   <div class="cont_centrar" ><br>
-  <p style="font-family: SEGOEUIL; font-size:24px; color:purple" class="text-center">Profile Information</p>
+  <p style="font-family: SEGOEUIL; font-size:24px; color:purple" class="text-center">Skills</p>
   <div class="cont_login">
     <form action="">
- 
-  <div class="cont_text_inputs active">
-     
-      <input type="text" class="input_form_sign " placeholder="NAME" name="name_us" />
-    
-    <input type="text" class="input_form_sign d_block active_inp" placeholder="Phone number" name="emauil_us" />
-    <input type="text" class="input_form_sign d_block active_inp" placeholder="Address" name="emauil_us" />
 
-    <input type="text" class="input_form_sign d_block  active_inp" placeholder="Preferred work location e.g Karachi" name="pass_us" /> 
-    
-    <input type="text" class="input_form_sign d_block  active_inp" placeholder="Desored Job Title" name="pass_us" /> 
-    <input type="text" class="input_form_sign d_block  active_inp" placeholder="CNIC Number * " name="pass_us" /> 
-    
-    I am interested in<br>
-    <input type="checkbox"  name="interested" /> Permenant<br>
-    <input type="checkbox"  name="interested" />  Contract <br>
-    <input type="checkbox"  name="interested" />  Temporary<br>
-    <br>
+<div id="myDIV" class="header">
+  
+  <input type="text" id="myInput" placeholder="Title..." style="color:black">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
 
-   <select class="form-control" id="sel1" style="background-color:#CCC; padding:30px: color:purple; margin-left:40px; width:70%">
-        <option selected>Select your Sector</option>
-        <option ><span style="padding:10px">Accountancy</span></option>
-        
-        <option >Banking</option>
-        <option >Education , etc </option>
-        
-      </select>
- <br>
-     
+<ul id="myUL" style="list-style-type:none">
+  
+</ul>
 <div class="terms_and_cons d_none">
   
     </div>
       </div>
+     <br>
+      
 <div class="cont_btn">
      
      <button class="btn btn"  style="background-color:red; padding-left:5px; padding-right:5px ; color:white; margin-left:80px">Complete Your Profile</button><br><br>
@@ -534,128 +630,63 @@ $(document).ready(function(){
 
 
 
-
-
 <script>
-$('#range').on("change", function() {
-    $('.output').val(this.value +",000  $" );
-    }).trigger("change");
-
-function sign_up(){
-  var inputs = document.querySelectorAll('.input_form_sign');
-document.querySelectorAll('.ul_tabs > li')[0].className=""; 
-document.querySelectorAll('.ul_tabs > li')[1].className="active"; 
-  
-  for(var i = 0; i < inputs.length ; i++  ) {
-if(i == 2  ){
-
-}else{  
-document.querySelectorAll('.input_form_sign')[i].className = "input_form_sign d_block";
-}
-} 
-
-setTimeout( function(){
-for(var d = 0; d < inputs.length ; d++  ) {
- document.querySelectorAll('.input_form_sign')[d].className = "input_form_sign d_block active_inp";  
-   }
-
-
- },100 );
- document.querySelector('.link_forgot_pass').style.opacity = "0";
-   document.querySelector('.link_forgot_pass').style.top = "-5px";
-   document.querySelector('.btn_sign').innerHTML = "SIGN UP";    
-  setTimeout(function(){
-
- document.querySelector('.terms_and_cons').style.opacity = "1";
-  document.querySelector('.terms_and_cons').style.top = "5px";
- 
-  },500);
-  setTimeout(function(){
-    document.querySelector('.link_forgot_pass').className = "link_forgot_pass d_none";
- document.querySelector('.terms_and_cons').className = "terms_and_cons d_block";
-  },450);
-
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
 }
 
-
-
-function sign_in(){
-  var inputs = document.querySelectorAll('.input_form_sign');
-document.querySelectorAll('.ul_tabs > li')[0].className = "active"; 
-document.querySelectorAll('.ul_tabs > li')[1].className = ""; 
-  
-  for(var i = 0; i < inputs.length ; i++  ) {
-switch(i) {
-    case 1:
- console.log(inputs[i].name);
-        break;
-    case 2:
- console.log(inputs[i].name);
-    default: 
-document.querySelectorAll('.input_form_sign')[i].className = "input_form_sign d_block";
-}
-} 
-
-setTimeout( function(){
-for(var d = 0; d < inputs.length ; d++  ) {
-switch(d) {
-    case 1:
- console.log(inputs[d].name);
-        break;
-    case 2:
- console.log(inputs[d].name);
-
-    default:
- document.querySelectorAll('.input_form_sign')[d].className = "input_form_sign d_block";  
- document.querySelectorAll('.input_form_sign')[2].className = "input_form_sign d_block active_inp";  
-
-   }
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
   }
- },100 );
-
- document.querySelector('.terms_and_cons').style.opacity = "0";
-  document.querySelector('.terms_and_cons').style.top = "-5px";
-
-  setTimeout(function(){
- document.querySelector('.terms_and_cons').className = "terms_and_cons d_none"; 
-document.querySelector('.link_forgot_pass').className = "link_forgot_pass d_block";
-
- },500);
-
-  setTimeout(function(){
-
- document.querySelector('.link_forgot_pass').style.opacity = "1";
-   document.querySelector('.link_forgot_pass').style.top = "5px";
-    
-
-for(var d = 0; d < inputs.length ; d++  ) {
-
-switch(d) {
-    case 1:
- console.log(inputs[d].name);
-        break;
-    case 2:
- console.log(inputs[d].name);
-
-         break;
-    default:
- document.querySelectorAll('.input_form_sign')[d].className = "input_form_sign";  
 }
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
   }
-   },1500);
-   document.querySelector('.btn_sign').innerHTML = "SIGN IN";    
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
 }
-
-
-window.onload =function(){
-  document.querySelector('.cont_centrar').className = "cont_centrar cent_active";
-
-}
-
-
-
-</script>
-<!--wt1434828-->
+</script><!--wt1434828-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </div>

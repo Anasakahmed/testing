@@ -10,7 +10,10 @@
 <meta charset="utf-8">
 <title>For Job</title>
 <style>
-
+body
+{ 
+ background-image:linear-gradient(-87deg, #F2F5F6 0%, #DDE5E8 100%)
+}
 
 #stylelogo
 {
@@ -42,7 +45,7 @@ option {
 .cont_principal {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: auto;
 /* Rectangle 3: */
 background-image: linear-gradient(-87deg, #F2F5F6 0%, #DDE5E8 100%);
 }
@@ -462,13 +465,16 @@ $(document).ready(function(){
   </div>
 </nav>
 
-
 <!-- Forms -->
 
 <div class="cont_principal" >
 
 
 
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+<br><br><br><br><br>x
  
   <div class="cont_centrar" ><br>
   <p style="font-family: SEGOEUIL; font-size:24px; color:purple" class="text-center">Education</p>
@@ -487,16 +493,68 @@ $(document).ready(function(){
         <option >Intermediate</option>
         <option >Matric </option>
               </select>
-        
-         <b>Matric Score</b>:
-         O-Level / SSC
+               <input type="text" class="input_form_sign d_block  active_inp" placeholder="Fill this if you have done Diploma with Field info  " name="pass_us" /> 
+       
+       <!-- Matric Field -->
+       
+        <br>
+         <b>Matric Score</b>:<br>
+        <input type="text" class="input_form_sign d_block  active_inp" placeholder="From e.g 2014" name="pass_us" style="width:40%" />
+        <input type="text" class="input_form_sign d_block  active_inp" placeholder="To e.g 2016" name="pass_us" style="width:40%" />
+         <br>
+        <!-- Start Date 
+         <input type="date" class="input_form_sign d_block  active_inp" ><br>
+         
+         End Date<br>
+         <input type="date" class="input_form_sign d_block  active_inp" >-->
+       
    <select class="form-control" id="sel1" style="background-color:#CCC; padding:30px: color:purple; margin-left:40px; width:70%">
-        <option selected>O-Level</option>
+        <option selected>O-Level / SSC</option>
+        <option>O-Level</option>
         <option ><span style="padding:10px">SSC</span></option>
         </select>
         
+           <br>
+   <select class="form-control" id="sel1" style="background-color:#CCC; padding:30px: color:purple; margin-left:40px; width:70%">
+        <option selected>Commerce</option>
+        <option>Pre-Engineering</option>
+        <option ><span style="padding:10px">Medical</span></option>
+        </select>
         
-        Grade:
+        <br>
+       
+        <select class="form-control" id="sel1" style="background-color:#CCC; padding:30px: color:purple; margin-left:40px; width:70%">
+        
+        <option >A+ Grade</option>
+        <option >A Grade</option>
+        <option >B Grade</option>
+       </select>
+       <br>
+       
+       <!-- Inteermediate Field -->
+       
+       
+       <b>Intermediate Score</b>:<br>
+              <input type="text" class="input_form_sign d_block  active_inp" placeholder="From e.g 2014" name="pass_us" style="width:40%" />
+        <input type="text" class="input_form_sign d_block  active_inp" placeholder="To e.g 2016" name="pass_us" style="width:40%" />
+   <select class="form-control" id="sel1" style="background-color:#CCC; padding:30px: color:purple; margin-left:40px; width:70%">
+        <option selected>Intermediate/A-Level</option>
+        
+        
+        <option>A-Level</option>
+        <option ><span style="padding:10px">HSC</span></option>
+        </select>
+        
+        <br>
+        
+        
+   <select class="form-control" id="sel1" style="background-color:#CCC; padding:30px: color:purple; margin-left:40px; width:70%">
+        <option selected>Commerce</option>
+        <option>Pre-Engineering</option>
+        <option ><span style="padding:10px">Medical</span></option>
+        </select>
+        
+           <br>
         <select class="form-control" id="sel1" style="background-color:#CCC; padding:30px: color:purple; margin-left:40px; width:70%">
         
         <option >A+ Grade</option>
@@ -505,14 +563,58 @@ $(document).ready(function(){
        </select>
         
         
+            <br>
+       <b>Degree</b>:<br>
+              <input type="text" class="input_form_sign d_block  active_inp" placeholder="From e.g 2014" name="pass_us" style="width:40%" />
+        <input type="text" class="input_form_sign d_block  active_inp" placeholder="To e.g 2016" name="pass_us" style="width:40%" />
+   <select class="form-control" id="sel1" style="background-color:#CCC; padding:30px: color:purple; margin-left:40px; width:70%">
+        <option selected>Degree Name</option>
+        
+        
+        <option>Bed</option>
+        <option ><span style="padding:10px">BSC</span></option>
+        </select>
+        
+        <br>
+        
+        
+   <select class="form-control" id="sel1" style="background-color:#CCC; padding:30px: color:purple; margin-left:40px; width:70%">
+        <option selected>Field</option>
+        <option>Pre-Engineering</option>
+        <option ><span style="padding:10px">Medical</span></option>
+        </select>
+        
+           <br>
+        <select class="form-control" id="sel1" style="background-color:#CCC; padding:30px: color:purple; margin-left:40px; width:70%">
+        
+        <option >Status</option>
+        <option >Local</option>
+        <option >Foreign</option>
+       </select>
+       
+       
+   		     
+          <input type="text" class="input_form_sign d_block  active_inp" placeholder="         CGPA" name="pass_us" style=" margin-left:40px;width:70%" />
         
 
+   <select class="form-control" id="sel1" style="background-color:#CCC; padding:30px: color:purple; margin-left:40px; width:70%">
+        
+        <option >Status of Degree</option>
+        <option >Completed</option>
+        <option >On-Going</option>
+       </select>
  <br>
      
 <div class="terms_and_cons d_none">
   
     </div>
       </div>
+      <div class="cont_btn">
+     
+     <button class="btn btn"  style="background-color:#0CF; padding-left:5px; padding-right:5px ; color:white; margin-left:95px">Add more Degree</button><br><br>
+      
+      </div>
+      
 <div class="cont_btn">
      
      <button class="btn btn"  style="background-color:red; padding-left:5px; padding-right:5px ; color:white; margin-left:80px">Complete Your Profile</button><br><br>
