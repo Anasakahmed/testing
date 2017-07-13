@@ -8,8 +8,25 @@
 <meta charset="utf-8">
 <title>JustHired - Home</title>
 <style>
-
-
+body{
+        
+        background-image: url("img/3.jpg");
+       
+        background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 530px;
+  
+  
+ 
+    }    
+@media (max-width: 700px) {
+    body{
+     background-size: 400%;   
+        
+    }
+    
+    }
 #stylelogo
 {
 	font-family:"Times New Roman", Times, serif;
@@ -24,8 +41,332 @@
 .imagew{
 	background-image:url(img/3.jpg)
 }
-</style>
 
+    @font-face{
+         font-family:Font2;
+             src: url(North.otf);
+        
+    }
+    
+    .Recruit{
+        font-family:font2;
+        text-shadow: 5px 5px 2px black ;
+        color: antiquewhite;
+
+        
+        
+    }
+    
+        
+    .Recruit2{
+        
+      
+        color: antiquewhite;
+
+        
+        
+    }
+    
+    hr{
+          display: block;
+    height: 1px;
+    border: 0;
+    border-top: 4px solid purple;
+   
+        
+     
+    }
+    
+    .text-wrapper {
+	text-align: left;
+	font-family: 'Lora', serif;
+	font-size: 2.2em;
+	padding: 1% 0;
+}
+
+.animated-words {
+	display: inline-block;
+}
+
+.animated-words span {
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	color: #6b969d;
+	-webkit-animation: rotateWord 18s linear infinite 0s;
+	-ms-animation: rotateWord 18s linear infinite 0s;
+	animation: rotateWord 18s linear infinite 0s;
+}
+
+.animated-words{
+	position:absolute;
+}
+
+.animated-words span:nth-child(2) { 
+    -webkit-animation-delay: 3s; 
+	-ms-animation-delay: 3s; 
+	animation-delay: 3s; 
+	color: burlywood;
+}
+.animated-words span:nth-child(3) { 
+    -webkit-animation-delay: 6s; 
+	-ms-animation-delay: 6s; 
+	animation-delay: 6s; 
+	color: burlywood;	
+}
+.animated-words span:nth-child(4) { 
+    -webkit-animation-delay: 9s; 
+	-ms-animation-delay: 9s; 
+	animation-delay: 9s; 
+	color: burlywood;
+}
+.animated-words span:nth-child(5) { 
+    -webkit-animation-delay: 12s; 
+	-ms-animation-delay: 12s; 
+	animation-delay: 12s; 
+	color: burlywood;
+}
+.animated-words span:nth-child(6) { 
+    -webkit-animation-delay: 15s; 
+	-ms-animation-delay: 15s; 
+	animation-delay: 15s; 
+	color: burlywood;
+}
+@-webkit-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -ms-transform: translateY(-30px); }
+	5% { opacity: 1; -ms-transform: translateY(0px);}
+    17% { opacity: 1; -ms-transform: translateY(0px); }
+	20% { opacity: 0; -ms-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+    
+    .tab-pane{display:none}
+    
+    
+}
+
+
+
+
+.search-box {	
+	input[type="text"] {
+		border: none;
+		background: none;
+		z-index: 1;
+		width: 25px;
+		height: 25px;
+		transition: all .25s ease-in .25s;
+		color: transparent;
+		font-size: .75rem;
+		line-height:25px;
+		&:hover {
+			cursor: pointer;
+			&:focus {
+				cursor: text;
+			}
+			+ span {
+				background: rgba(255,255,255,0.2);
+			}
+		}
+		&:focus {
+			width: 200px;
+			padding: 0 10px;
+			outline: none;
+			color: black;
+			background:none;
+			color: white;
+			+ span {
+				width: 200px;
+				&::before {
+					width:2px;
+					opacity: 0;
+					transition: all .25s ease-in;
+				}
+			}
+		}
+		+ span {
+			z-index: -1;
+			position: absolute;
+			border: 2px solid white;
+			top: 0;
+			width: 25px;
+			height: 25px;
+			transition: all .25s ease-in .25s;
+			border-radius: 25px;
+			left: 0;
+			&::before {
+				transition: all .25s ease-in .5s;
+				transform-origin: left top;
+				content: '';
+				position: absolute;
+				width: 10px;
+				height: 5px;
+				border-radius: 5px;
+				background: white;
+				transform: rotate(45deg) translate(26px, -2px);
+			}
+		}
+	}
+}
+    
+margin: 0 auto;
+}
+a {
+	color: #69C;
+	text-decoration: none;
+}
+a:hover {
+	color: #F60;
+}
+
+
+
+input {
+	outline: none;
+    margin-left: 30%;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+
+input[type=search] {
+	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 100px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+    
+    .location{
+        background: #ededed url(img/1.jpg) no-repeat 9px center;
+        
+    }    
+input[type=text]:focus {
+	width: 150px;
+	background-color: #fff;
+	border-color: #66CC75;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+    
+    input[type=text] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+
+input[type=text] {
+	background: #ededed url(http://stilwerk.com/images/icons/location.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 100px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+    
+   
+input[type=search]:focus {
+	width: 150px;
+	background-color: #fff;
+	border-color: #66CC75;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+/* Demo 2 */
+#demo-2 input[type=search] {
+	width: 15px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+}
+#demo-2 input[type=search]:hover {
+	background-color: #fff;
+}
+#demo-2 input[type=search]:focus {
+	width: 130px;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+#demo-2 input:-moz-placeholder {
+	color: transparent;
+}
+#demo-2 input::-webkit-input-placeholder {
+	color: transparent;
+}
+    
+    #f:active{
+        color:black
+    }
+    
+    #Jobss{
+        text-align: center;
+        padding-top: 5px;
+         border-radius:5px 5px 5px 5px
+        
+    }
+    </style>
 <script>
 $(document).ready(function(){
 	$(".d").delay("fast")
@@ -36,9 +377,11 @@ $(document).ready(function(){
 </head>
 
 <body>
-<nav class="navbar navbar-default" style="background-color:white">
-  <div class="container-fluid" style="background-color:white">
-  <a class="navbar-brand text-center" href="#" style="text-align:center; font-size:27px; color:purple">Just Hired</a>
+
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color:white">
+  <div class="container-fluid" style="background-color:white " >
+  <img class=" img-responsive" src="img/LOGO-TASHA.png" width="160px" style="float:left; padding-top:10px; padding-left:30px; margin-left:20px" >
+ 
     <div class="navbar-header" style="background-color:white">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <h4>Menu</h4>                       
@@ -52,19 +395,90 @@ $(document).ready(function(){
         </li>
       
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li ><a href="#" ><button class="btn btn-danger"><span class="glyphicon glyphicon-user" ></span> Sign Up</button></a></li>
-        <li><a href="#"><button class="btn btn-danger"><span class="glyphicon glyphicon-user" ><span class="glyphicon glyphicon-log-in"></span> Login</button></a></li>
-      </ul>
+      <ol class="nav navbar-nav navbar-right">
+        <li ><a href="#" ><button class="btn btn" style="border-radius:0px 0px 0px; background-color:#09F; color:white; height:40px; width:150px; font-size:16px"  ><span class="glyphicon glyphicon-user" >
+        </span> Sign Up</button></a></li>
+        <li ><a href="#" ><button class="btn btn"  style="border-radius:0px 0px 0px; background-color: #642891; color:white; height:40px; width:150px; font-size:16px"  ><span class="glyphicon glyphicon-user" >
+        </span> Login</button></a></li>
+      </ol>
     </div>
   </div>
 </nav>
+    
+    <br><br><br><br><br><br>
+    <div class="container">
+    
+    <div class="col-lg-6  " style="padding:100px;color:white; "><div>
+        
+        <div class="text-wrapper">
+    <h1 class="Recruit text-center" style="font-size:26px;">Find&nbsp;
+    <div class="animated-words">
+        <span>BETTER</span>
+        <span>JOBS</span>
+        <span>EMPLOYEES</span>
+        <span>COMPANIES</span>
+        <span>PEOPLE</span>
+        <span></span>
+        
+    </div>
+        </h1>
+            
+             
+        
+    <h3 class="Recruit2" style="text-align:right"> We can help you find the best Jobs, Employers and Career advice.
+        </h3>
+</div>
+        
+        </div>
+        
+        
+       
+
+        
+        
+        </div>
+        
+        
+        
+        <!--Forms -->
+        
+        
+        
+        
+    <div class="col-lg-6">
+    <div class="col-lg-4"></div>
+        <div class="col-lg-4" style="background-color:#642891
+; height:40px;" id="Jobss"><p  style="font-size: 20px; color:white;">JOBS</H2></div>
+        <div class="col-lg-4"></div>
+        
+    <form>
+        
+<br><br>
+<br><br>
 
 
+	<input type="search" placeholder="Search">
+</form>
+ <form>
+        
+<br>
 
 
+	<input type="text" placeholder="Location">
+</form>
+        
+        
+
+</div>
+        
+        <script>
+            
+        document.$('.search-button').click(function(){
+  $(this).parent().toggleClass('open');
+});
+        </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</div>
+
 </body>
 </html>

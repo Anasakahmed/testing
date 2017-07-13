@@ -1,0 +1,531 @@
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font.css" rel="stylesheet" type="text/css">
+
+    <script src="js/bootstrap.min.js">
+    </script>
+    <meta charset="utf-8">
+    <title>For Job</title>
+    <style>
+        body {
+            background-color: #edeeef;
+        }
+        
+        #stylelogo {
+            font-family: "Times New Roman", Times, serif;
+            text-align: center;
+            color: #636;
+        }
+        
+        .opbtn:hover {
+            box-shadow: 5px 10px 20px #666;
+        }
+        
+        .imagew {
+            background-image: url(img/3.jpg)
+        }
+        
+        option {
+            width: 100%;
+            padding: 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        
+        * {
+            margin: 0px auto;
+            padding: 0px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .caret {
+            border-width: 6px;
+        }
+        
+        .brd:focus{
+            
+            border: solid 2px  #642891;
+            
+            
+        }
+        
+        .func:focus{
+            
+            border:solid 2px  #642891;
+        }
+        
+        #tbl2{
+            height: 40px;  padding-left: 20px;
+            color: dodgerblue; 
+        }
+        
+        table
+        {
+            
+        }
+        
+        .hovertable:hover{
+             border: ;
+            outline: solid 1px dodgerblue;;
+    outline-offset: -1px;
+            
+        }
+        
+   
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            $(".d").delay("fast")
+            $(".d").animate({
+                right: '30px'
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:white">
+        <div class="container-fluid" style="background-color:white ">
+            <img class=" img-responsive" src="img/LOGO-TASHA.png" width="160px" style="float:left; padding-top:10px; padding-left:30px; margin-left:20px">
+
+            <div class="navbar-header" style="background-color:white">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <h4>Menu</h4>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+
+
+
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">
+                            <button class="btn btn" style="border-radius:0px 0px 0px; background-color:#09F; color:white; height:40px; width:150px; font-size:16px"><span class="glyphicon glyphicon-user">
+        </span> Sign Up</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <button class="btn btn" style="border-radius:0px 0px 0px; background-color:#F60; color:white; height:40px; width:150px; font-size:16px"><span class="glyphicon glyphicon-user">
+        </span> Login</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- Forms -->
+    <div class="container-fluid">
+
+
+        <div class="col-lg-3" style="  padding:10px">
+
+            <div style="height: 900px; padding: 30px; margin-left: 9px; margin-top: 13px; background-color: white;">
+                <form>
+
+                    <input class="form-control brd" type="search" placeholder="Search" style="height: 50px; border-radius:0px 0px 0px 0px">
+                    <br>
+                    
+                    
+                    <!-- Faculty-->
+                     <select class="form-control" id="sel1" style="background-color:#CCC; padding:30px: ">
+        <option selected>Minimum Salary</option>
+        
+        
+        <option>5000</option>
+        <option ><span style="padding:10px">10000</span></option>
+                         <option ><span style="padding:10px">20000</span></option>
+                         <option ><span style="padding:10px">30000</span></option>
+                         <option ><span style="padding:10px">40000</span></option>
+        </select>
+                    
+                    
+                  <br>  
+                    
+                    
+                    
+                     <select style="background-color:#CCC"  class="func form-control radius0 selectPicker  s-16" name="category" data-size="15" data-live-search="true">
+                                            <option value="">Functional Area</option>
+                                                                              
+                         <option value="13"  title="Accounts, Finance &amp; Financial Services">Accounts, Finance &amp; Financial Services </option>
+                                                                                       
+                         <option value="132"  title="Administration">Administration </option>
+                                                                                        
+                         <option value="76"  title="Advertising">Advertising </option>
+                                                                                       
+                         <option value="77"  title="Architects &amp; Construction">Architects &amp; Construction </option>
+                                                                                       
+                         <option value="109"  title="Client Services &amp; Customer Support">Client Services &amp; Customer Support </option>
+                                                                                      
+                         <option value="88"  title="Computer Networking">Computer Networking </option>
+                                                                                       
+                         <option value="55"  title="Corporate Affairs">Corporate Affairs </option>
+                                                                                       
+                         <option value="110"  title="Creative Design">Creative Design </option>
+                                                                                       
+                         <option value="79"  title="Data Entry">Data Entry </option>
+                                                                                       
+                         <option value="99"  title="Database Administration (DBA)">Database Administration (DBA) </option>
+                                                                                       
+                         <option value="128"  title="Distribution &amp; Logistics">Distribution &amp; Logistics </option>
+                                                                                      
+                         <option value="52"  title="Engineering">Engineering </option>
+                                                                                      
+                         <option value="81"  title="Executive Management">Executive Management </option>
+                                                                                      
+                         <option value="130"  title="Field Operations">Field Operations </option>
+                                                                                      
+                         <option value="82"  title="Hardware">Hardware </option>
+                                                                                       
+                         <option value="53"  title="Health &amp; Medicine">Health &amp; Medicine </option>
+                                                                                       
+                         <option value="60"  title="Hotel/Restaurant Management">Hotel/Restaurant Management </option>
+                                                                                       
+                         <option value="14"  title="Human Resources">Human Resources </option>
+                                                                                       
+                         <option value="83"  title="Import &amp; Export">Import &amp; Export </option>
+                                                                                     
+                         <option value="89"  title="Industrial Production">Industrial Production </option>
+                                                                                      
+                         <option value="84"  title="Intern">Intern </option>
+                                                                                      
+                         <option value="951"  title="Investment Operations">Investment Operations </option>
+                                                                                      
+                         <option value="57"  title="Legal Affairs">Legal Affairs </option>
+                                                                                      
+                         <option value="124"  title="Maintenance/Repair">Maintenance/Repair </option>
+                                                                                    
+                         <option value="85"  title="Management Consulting">Management Consulting </option>
+                                                                                     
+                         <option value="133"  title="Management Information System (MIS)">Management Information System (MIS) </option>
+                                                                                       
+                         <option value="21"  title="Manufacturing">Manufacturing </option>
+                                                                                      
+                         <option value="127"  title="Maritime &amp; Shipping">Maritime &amp; Shipping </option>
+                                                                                        
+                         <option value="16"  title="Marketing">Marketing </option>
+                                                                                    
+                         <option value="86"  title="Media - Print &amp; Electronic">Media - Print &amp; Electronic </option>
+                                                                                     
+                         <option value="129"  title="Merchandising">Merchandising </option>
+                                                                                     
+                         <option value="134"  title="Monitoring &amp; Evaluation (M&amp;E)">Monitoring &amp; Evaluation (M&amp;E) </option>
+                                                                                       
+                         <option value="15"  title="Operations">Operations </option>
+                                                                                      
+                         <option value="23"  title="Planning &amp; Development">Planning &amp; Development </option>
+                                                                                     
+                         <option value="50"  title="Procurement">Procurement </option>
+                                                                                      
+                         <option value="32"  title="Product Development">Product Development </option>
+                                                                                      
+                         <option value="90"  title="Product Management">Product Management </option>
+                                                                                      
+                         <option value="108"  title="Project Management">Project Management </option>
+                                                                                      
+                         <option value="58"  title="Public Relations">Public Relations </option>
+                                                                                       
+                         <option value="22"  title="Quality Assurance (QA)">Quality Assurance (QA) </option>
+                                                                                      
+                         <option value="125"  title="Quality Control">Quality Control </option>
+                                                                                       
+                         <option value="100"  title="Researcher">Researcher </option>
+                                                                                        
+                         <option value="92"  title="Retail">Retail </option>
+                                                                                       
+                         <option value="123"  title="Safety &amp; Environment">Safety &amp; Environment </option>
+                                                                                       
+                         <option value="49"  title="Sales &amp; Business Development">Sales &amp; Business Development </option>
+                                                                                       
+                         <option value="135"  title="Search Engine Optimization (SEO)">Search Engine Optimization (SEO) </option>
+                                                                                     
+                         <option value="78"  title="Secretarial, Clerical &amp; Front Office">Secretarial, Clerical &amp; Front Office </option>
+                                                                                      
+                         <option value="114"  title="Security">Security </option>
+                                                                                      
+                         <option value="95"  title="Software &amp; Web Development">Software &amp; Web Development </option>
+                                                                                      
+                         <option value="111"  title="Supply Chain Management">Supply Chain Management </option>
+                                                                                      
+                         <option value="96"  title="Systems Analyst">Systems Analyst </option>
+                                                                                      
+                         <option value="102"  title="Teachers/Education, Training &amp; Development">Teachers/Education, Training &amp; Development </option>
+                                                                                     
+                         <option value="94"  title="Telemarketing">Telemarketing </option>
+                                                                                       
+                         <option value="126"  title="Warehousing">Warehousing </option>
+                                                                                       
+                         <option value="101"  title="Writer">Writer </option>
+                                                
+                                        </select>
+                    
+                    
+                    
+                    
+                    
+                    <br>
+
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="text-decoration:none"><b>Job Title <span class=" caret pull-right" style="margin:3px"></span></b> <span class=""></span></a>
+        </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse in">
+                                <div class="panel-body">
+
+                                    <input type="checkbox" id="graphic"><span style="font-size:13px;"> Graphic Designer</span><br>
+                                    <br>
+                                    <input type="checkbox" id="graphic"><span style="font-size:13px"> Web / Graphic Designer</span>
+                                    <br><br>
+                                    <input type="checkbox" id="graphic"><span style="font-size:13px"> Graphic / Web Designer</span>
+                                    <br><br>
+                                    <input type="checkbox" id="graphic"><span style="font-size:13px"> Marketing Officer</span>
+                                    <br><br>
+                                    <input type="checkbox" id="graphic"><span style="font-size:13px"> 2D / 3D Graphics Designer</span>
+                                    <br><br>
+                               
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="text-decoration:none"><b>City<span class=" caret pull-right" style="margin:3px"></span></b></a>
+        </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+
+
+                                    <input type="checkbox" id="graphic"> <span style="font-size:13px;">Lahore</span>
+                                    <br><br>
+                                    <input type="checkbox" id="graphic"> <span style="font-size:13px">Islamabad</span>
+                                    <br><br>
+                                    <input type="checkbox" id="graphic"> <span style="font-size:13px">
+Karachi</span>
+                                    <br><br>
+                                    <input type="checkbox" id="graphic"> <span style="font-size:13px">
+Gujranwala</span>
+                                    <br><br>
+                                    <input type="checkbox" id="graphic"> <span style="font-size:13px">Sialkot</span>
+                                    <br><br>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="text-decoration:none"><b>Experience<span class=" caret pull-right" style="margin:3px"></span></b></a>
+        </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <input type="checkbox" id="graphic"><span style="font-size:13px;"> Fresh</span>
+                                    <br><br>
+                                    <input type="checkbox" id="graphic"><span style="font-size:13px"> 1 year</span>
+                                    <br><br>
+                                    <input type="checkbox" id="graphic"><span style="font-size:13px"> 2 year</span>
+                                    <br><br>
+                                    <input type="checkbox" id="graphic"><span style="font-size:13px"> 3 year</span>
+                                    <br><br>
+                                    <input type="checkbox" id="graphic"><span style="font-size:13px"> 5 year</span>
+                                    <br><br>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                         <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="text-decoration:none"><b>Job Type<span class=" caret pull-right" style="margin:3px"></span></b></a>
+        </h4>
+                            </div>
+                            <div id="collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <input type="checkbox" id="graphic"><span style="font-size:13px;"> Permenant</span>
+                                    <br><br>
+                                    <input type="checkbox" id="graphic"><span style="font-size:13px"> Contract</span>
+                                    <br><br>
+                                    <input type="checkbox" id="graphic"><span style="font-size:13px"> Internship</span>
+                                    <br><br>
+                                    <input type="checkbox" id="graphic"><span style="font-size:13px"> Part Time</span>
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                         <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="text-decoration:none"><b>Career Level<span class=" caret pull-right" style="margin:3px"></span></b></a>
+        </h4>
+                            </div>
+                            <div id="collapse5" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <input type="checkbox" id="graphic"><span style="font-size:13px;"> Experienced</span>
+                                    <br><br>
+                                    <input type="checkbox" id="graphic"><span style="font-size:13px"> Intern / Student</span>
+                                    <br><br>
+                                    <input type="checkbox" id="graphic"><span style="font-size:13px"> INtermediate</span>
+                                    <br><br>
+                                    
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+
+                            <button type="submit" class="btn btn" style="border-radius:0px 0px 0px 0px; background-color:#642891;padding-right:30px; width:100%;  padding-left:30px; color:white; font-size: 18px">Search Rizq</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="col-lg-6" style="; height:900px ;padding:10px">
+            <div style="; height:900px;padding:10px">
+                <div class="row hovertable" style=" background-color:white; height:auto; padding:10px">
+                
+                    <br>
+                        <span id="tbl2"><b>Graphic Designer</b></span>
+                    
+                    <br>
+                    
+                    <span id="tbl2" style="color:gray"><b>Lahore</b></span>
+                    <br><br>
+                    <p id="tbl2" style="color:gray">Demonstrated strong creativity in ideation, conceptualization, design & layout of web & mobile products Can work with product & development ..</p>
+                    
+                    <br>
+                    
+                
+                </div>
+                
+                
+                
+                <br>
+                
+                <div class="row hovertable" style=" background-color:white; height:auto; padding:10px">
+                
+                    <br>
+                        <span id="tbl2"><b>Graphic Designer</b></span>
+                    
+                    <br>
+                    
+                    <span id="tbl2" style="color:gray"><b>Lahore</b></span>
+                    <br><br>
+                    <p id="tbl2" style="color:gray">Demonstrated strong creativity in ideation, conceptualization, design & layout of web & mobile products Can work with product & development ..</p>
+                    
+                    <br>
+                    
+                
+                </div>
+                <br>
+                
+                <div class="row hovertable" style=" background-color:white; height:auto; padding:10px">
+                
+                    <br>
+                        <span id="tbl2"><b>Graphic Designer</b></span>
+                    
+                    <br>
+                    
+                    <span id="tbl2" style="color:gray"><b>Lahore</b></span>
+                    <br><br>
+                    <p id="tbl2" style="color:gray">Demonstrated strong creativity in ideation, conceptualization, design & layout of web & mobile products Can work with product & development ..</p>
+                    
+                    <br>
+                    
+                
+                </div> <br>
+                
+                <div class="row hovertable" style=" background-color:white; height:auto; padding:10px">
+                
+                    <br>
+                        <span id="tbl2"><b>Graphic Designer</b></span>
+                    
+                    <br>
+                    
+                    <span id="tbl2" style="color:gray"><b>Lahore</b></span>
+                    <br><br>
+                    <p id="tbl2" style="color:gray">Demonstrated strong creativity in ideation, conceptualization, design & layout of web & mobile products Can work with product & development ..</p>
+                    
+                    <br>
+                    
+                
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="col-lg-3" style="  padding:10px">
+
+            <div style=" background-color:white; height:900px">
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <!--wt1434828-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</body>
